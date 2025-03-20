@@ -58,7 +58,7 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 
-		
+		<PackageReference Include="Mysql.Data" Version="8.0.27" />
 	</ItemGroup>
 
 	<ItemGroup>

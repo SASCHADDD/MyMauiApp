@@ -69,6 +69,10 @@
               "target": "Package",
               "version": "[9.0.2, )",
               "autoReferenced": true
+            },
+            "Mysql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
             }
           },
           "imports": [
@@ -114,6 +118,10 @@
               "target": "Package",
               "version": "[9.0.2, )",
               "autoReferenced": true
+            },
+            "Mysql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
             }
           },
           "imports": [
@@ -159,6 +167,10 @@
               "target": "Package",
               "version": "[9.0.2, )",
               "autoReferenced": true
+            },
+            "Mysql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
             }
           },
           "imports": [
