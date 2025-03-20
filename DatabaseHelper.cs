@@ -72,33 +72,18 @@ public class DatabaseHelper
         }
     }
 
-    public void DeleteData(string nim)
-    {
-        try
+   public void DeleteData(string nim)
+{
+        string query = "DELETE FROM mahasiswa WHERE NIM = @NIM";
+        MySqlCommand cmd = new MySqlCommand(query, connection);
+    try
         {
-            if (connection.State == ConnectionState.Closed)
-            {
-                connection.Open();
-            }
-
-            string query = "DELETE FROM mahasiswa WHERE NIM = @NIM";
-
-            using (var cmd = new MySqlCommand(query, connection))
-            {
-                cmd.Parameters.AddWithValue("@NIM", nim);
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-                Console.WriteLine(rowsAffected > 0
-                    ? "Data deleted successfully"
-                    : "No record found with the provided NIM");
-            }
+        cmd.ExecuteNonQuery();
         }
-        catch (MySqlException ex) // Tangkap error khusus MySQL
+        catch (Exception ex)
         {
-            Console.WriteLine($"[Database Error] Failed to delete data: {ex.Message}");
-        }
-        catch (Exception ex) // Tangkap error umum lainnya
-        {
-            Console.WriteLine($"[Error] Failed to delete data: {ex.Message}");
+
+        Console.WriteLine($"Failed to delete data: {ex.Message}");
         }
     }
+}
