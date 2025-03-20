@@ -41,4 +41,26 @@ public class DatabaseHelper
         return dataTable;
     }
 
+    public void InsertData(string nim, string nama, string email, string telpon, string alamat)
+    {
+        try
+        {
+            string query = "INSERT INTO mahasiswa (NIM, Nama, Email, Telpon, Alamat) VALUES (@NIM, @Nama, @Email, @Telpon, @Alamat)";
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+
+            cmd.Parameters.AddWithValue("@NIM", nim);
+            cmd.Parameters.AddWithValue("@Nama", nama);
+            cmd.Parameters.AddWithValue("@Email", email);
+            cmd.Parameters.AddWithValue("@Telpon", telpon);
+            cmd.Parameters.AddWithValue("@Alamat", alamat);
+
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("Data inserted successfully");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Failed to insert data: {ex.Message}");
+        }
+    }
+
     
