@@ -25,4 +25,20 @@ public class DatabaseHelper
         }
     }
 
+    public DataTable GetData()
+    {
+        DataTable dataTable = new DataTable();
+        try
+        {
+            string query = "SELECT NIM, Nama, Email, Telpon, Alamat FROM mahasiswa";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(query, connection);
+            adapter.Fill(dataTable);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Failed to retrieve data: {ex.Message}");
+        }
+        return dataTable;
+    }
+
     
