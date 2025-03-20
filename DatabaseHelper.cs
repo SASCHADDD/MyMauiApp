@@ -63,4 +63,13 @@ public class DatabaseHelper
         }
     }
 
-    
+    public void CloseConnection()
+    {
+        if (connection.State == ConnectionState.Open)
+        {
+            connection.Close();
+            Console.WriteLine("Database connection closed.");
+        }
+    }
+}
+
