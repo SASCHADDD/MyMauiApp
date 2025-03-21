@@ -73,6 +73,14 @@
             "Mysql.Data": {
               "target": "Package",
               "version": "[8.0.27, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2545, )"
             }
           },
           "imports": [
@@ -122,6 +130,14 @@
             "Mysql.Data": {
               "target": "Package",
               "version": "[8.0.27, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2545, )"
             }
           },
           "imports": [
@@ -171,6 +187,14 @@
             "Mysql.Data": {
               "target": "Package",
               "version": "[8.0.27, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2545, )"
             }
           },
           "imports": [

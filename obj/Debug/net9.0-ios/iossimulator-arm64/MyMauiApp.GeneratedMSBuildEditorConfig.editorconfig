@@ -30,6 +30,42 @@ build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[/Users/saschadanu/MyMauiApp/CRUDSederhana/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.CRUDSederhana.App.xaml
+build_metadata.AdditionalFiles.TargetPath = CRUDSederhana/App.xaml
+build_metadata.AdditionalFiles.RelativePath = CRUDSederhana/App.xaml
+
+[/Users/saschadanu/MyMauiApp/CRUDSederhana/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.CRUDSederhana.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = CRUDSederhana/AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = CRUDSederhana/AppShell.xaml
+
+[/Users/saschadanu/MyMauiApp/CRUDSederhana/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.CRUDSederhana.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CRUDSederhana/MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CRUDSederhana/MainPage.xaml
+
+[/Users/saschadanu/MyMauiApp/CRUDSederhana/Platforms/Windows/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.CRUDSederhana.Platforms.Windows.App.xaml
+build_metadata.AdditionalFiles.TargetPath = CRUDSederhana/Platforms/Windows/App.xaml
+build_metadata.AdditionalFiles.RelativePath = CRUDSederhana/Platforms/Windows/App.xaml
+
+[/Users/saschadanu/MyMauiApp/CRUDSederhana/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.CRUDSederhana.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = CRUDSederhana/Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = CRUDSederhana/Resources/Styles/Colors.xaml
+
+[/Users/saschadanu/MyMauiApp/CRUDSederhana/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.CRUDSederhana.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = CRUDSederhana/Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = CRUDSederhana/Resources/Styles/Styles.xaml
+
 [/Users/saschadanu/MyMauiApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MyMauiApp.MainPage.xaml

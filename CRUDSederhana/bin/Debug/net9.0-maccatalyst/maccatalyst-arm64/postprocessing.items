@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="CRUDSederhana.app/Contents/MacOS/CRUDSederhana">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>CRUDSederhana.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>CRUDSederhana.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/saschadanu/MyMauiApp/CRUDSederhana/obj/Debug/net9.0-maccatalyst/maccatalyst-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>CRUDSederhana.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/saschadanu/MyMauiApp/CRUDSederhana</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

@@ -1,24 +1,49 @@
-﻿namespace MyMauiApp;
+﻿using System;
+using System.Data;
+using Microsoft.Maui.Controls;
+using Newtonsoft.Json;
 
-public partial class MainPage : ContentPage
+namespace MyMauiApp
 {
-	int count = 0;
+    public partial class MainPage : ContentPage
+    {
+        private DatabaseHelper dbHelper;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+        public MainPage()
+        {
+            InitializeComponent();
+            dbHelper = new DatabaseHelper(); // Diperbaiki: Penambahan '='
+            dbHelper.Connect();
+            LoadData();
+        }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+        private void OnSubmitButtonClicked(object sender, EventArgs e)
+        {
+            string nim = nimEntry.Text;      // Diperbaiki: Tambah '='
+            string nama = namaEntry.Text;    // Diperbaiki: Tambah '='
+            string email = emailEntry.Text;  // Diperbaiki: Tambah '='
+            string telpon = telponEntry.Text;
+            string alamat = alamatEntry.Text; // Diperbaiki: Tambah '='
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+            dbHelper.InsertData(nim, nama, email, telpon, alamat);
+            LoadData();
+        }
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        private void OnDeleteButtonClicked(object sender, EventArgs e)
+        {
+            string nim = nimEntry.Text; // Diperbaiki: Tambah '='
+            dbHelper.DeleteData(nim); // Ensure the NIM parameter is passed correctly
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            DataTable dataTable = dbHelper.GetData(); // Mengambil data dari database
+            dataGrid.ItemsSource = dataTable.DefaultView; // Menampilkan data pada dataGrid
+
+            // Serialize the data to JSON and log it
+            string jsonData = JsonConvert.SerializeObject(dataTable);
+            Console.WriteLine("Serialized Data: " + jsonData);
+        }
+    }
 }
-

@@ -72,18 +72,19 @@ public class DatabaseHelper
         }
     }
 
-   public void DeleteData(string nim)
-{
-        string query = "DELETE FROM mahasiswa WHERE NIM = @NIM";
-        MySqlCommand cmd = new MySqlCommand(query, connection);
-    try
+    public void DeleteData(string nim)
+    {
+        try
         {
-        cmd.ExecuteNonQuery();
+            string query = "DELETE FROM mahasiswa WHERE NIM = @NIM";
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@NIM", nim); // Bind the NIM parameter
+            cmd.ExecuteNonQuery();
+            Console.WriteLine("Data deleted successfully");
         }
         catch (Exception ex)
         {
-
-        Console.WriteLine($"Failed to delete data: {ex.Message}");
+            Console.WriteLine($"Failed to delete data: {ex.Message}");
         }
     }
 }
